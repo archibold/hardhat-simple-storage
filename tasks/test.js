@@ -1,5 +1,6 @@
 const fs = require("fs");
 const { task } = require("hardhat/config");
+require("hardhat-gas-reporter");
 
 task("block-number", "Print the current block number").setAction(
     async (taskArgs, hre) => {
